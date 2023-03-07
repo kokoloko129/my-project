@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="stylesheet"
+      href="
+    
+    "
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @font-face {
+        font-family: s;
+        src: url(/assets/fonts/static/HankenGrotesk-Medium.ttf);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .yourresult {
+        height: 500px;
+        width: 400px;
+        border: 1px solid white;
+        background-image: linear-gradient(rgb(101, 66, 253), rgb(52, 47, 220));
+        border-radius: 30px;
+        transform: translate(529px, 225px);
+        position: absolute;
+        top: 3%;
+        bottom: 3%;
+        left: 1%;
+        right: 1%;
+      }
+      .your-result-text {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(188, 176, 255);
+        padding-top: 20px;
+        padding-left: 105px;
+      }
+      .circle {
+        width: 200px;
+        height: 200px;
+        border: 1px none;
+        border-radius: 100px;
+        background-image: linear-gradient(#4c21c7, rgb(71, 52, 240));
+        transform: translate(100px, 10px);
+      }
+      .resultnum {
+        font-family: s;
+        font-size: 80px;
+        margin: 0px;
+        padding: 0px;
+        color: white;
+        transform: translate(55px, 30px);
+      }
+      .of {
+        color: rgb(126, 113, 255);
+        font-family: s;
+        transform: translate(70px, 5px);
+      }
+      .great {
+        color: white;
+        font-family: s;
+        font-size: 30px;
+        transform: translate(153px, -10px);
+      }
+      .higher_then {
+        font-family: s;
+        font-size: 20px;
+        color: rgb(187, 180, 255);
+        width: 208px;
+        height: 98px;
+        text-align: center;
+        transform: translate(90px, -20px);
+      }
+      .summery {
+        height: 500px;
+        width: 400px;
+        border: 1px solid rgb(248, 248, 248);
+        border-radius: 30px;
+        transform: translate(900px, 246px);
+        background-color: white;
+        position: absolute;
+        z-index: -1;
+        box-shadow: 5px 5px 10px 2px rgb(243, 246, 255);
+      }
+      .fullist{
+        font-family: s;
+        padding-left: 60px ;
+        transform: translateY(-20px);
+        
+      }
+      .heading_of_summery{
+        font-family: s;
+       transform: translate(90px,-10px);
+
+        font-size: 23px;
+      }
+      .reaction{
+        background-color: rgb(255,246,245);
+      }
+      .reaction{
+        height: 50px;
+        width: 300px;
+        border-radius: 10px;
+        text-align: left;
+        padding-bottom: 5%;
+        padding-top: 1px;
+        font-size: 20px;
+        color: rgb(225,132,139);
+        margin-bottom: 20px;
+        padding-left: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .memory{
+        background-color: rgb(255,251,242);
+        height: 50px;
+        width: 300px;
+        border-radius: 10px;
+        text-align: left;
+        padding-bottom: 5%;
+        padding-top: 10px;
+        font-size: 20px;
+        color: rgb(250,204,116);
+        margin-bottom: 20px;
+        padding-left: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .verbal{
+        background-color:rgb(242,250,250);
+        height: 50px;
+        width: 300px;
+        border-radius: 10px;
+        text-align: left;
+        padding-bottom: 5%;
+        padding-top: 10px;
+        font-size: 20px;
+        color: rgb(89,185,162);
+        margin-bottom: 20px;
+        padding-left: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .visual{
+        background-color:rgb(243,243,253);
+        height: 50px;
+        width: 300px;
+        border-radius: 10px;
+        text-align: left;
+        padding-bottom: 5%;
+        padding-top: 10px;
+        font-size: 20px;
+        color: rgb(42,49,154);
+        margin-bottom: 20px;
+        padding-left: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      .numbers{
+        font-family: s;
+        font-size: 20px;
+        transform: translate(243px,-377px);
+      }
+      .eight{
+padding-bottom: 70px;
+      }
+      .nine{
+        padding-bottom: 70px;
+      }
+      .six{
+        padding-bottom: 70px;
+      }
+.of100{
+
+  transform: translate(268px,-711px);
+  font-family: s;
+        font-size: 20px;
+        color: rgb(156,165,170);
+        font-family: s;
+}
+.o100{
+  padding-bottom: 70px;
+}
+.t100{
+  padding-bottom: 0px;
+}
+.contiue{
+  transform: translate(65px,-694px);
+  height: 55px;
+  width: 300px;
+  font-family: s;
+  background-color: rgb(48,59,89);
+  border: 1px solid rgb(48,59,89);
+  color: white;
+  border-radius: 50px;
+}
+.contiue:hover{
+  background-image: linear-gradient(rgb(101, 66, 253), rgb(52, 47, 220));
+}
+.contiue:active{
+  background-image: linear-gradient(rgb(101, 66, 253), rgb(52, 47, 220));
+  cursor: pointer;
+}
+      
+    </style>
+  </head>
+  <body>
+    <div class="yourresult">
+      <h1 class="your-result-text">Your Result</h1>
+      <div class="circle">
+        <p class="resultnum">76</p>
+        <p class="of">of 100</p>
+      </div>
+      <p class="great">Great</p>
+      <p class="higher_then">
+        You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </div>
+    <div class="summery">
+      <h3 class="heading_of_summery">Summary</h3>
+      <ul class="fullist" type="none">
+        <li class="reaction"> <pre><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#F55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg> Reaction</pre></li>
+        <li class="memory"> <pre><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M5.833 11.667a2.5 2.5 0 1 0 .834 4.858"/><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M3.553 13.004a3.333 3.333 0 0 1-.728-5.53m.025-.067a2.083 2.083 0 0 1 2.983-2.824m.199.054A2.083 2.083 0 1 1 10 3.75v12.917a1.667 1.667 0 0 1-3.333 0M10 5.833a2.5 2.5 0 0 0 2.5 2.5m1.667 3.334a2.5 2.5 0 1 1-.834 4.858"/><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M16.447 13.004a3.334 3.334 0 0 0 .728-5.53m-.025-.067a2.083 2.083 0 0 0-2.983-2.824M10 3.75a2.085 2.085 0 0 1 2.538-2.033 2.084 2.084 0 0 1 1.43 2.92m-.635 12.03a1.667 1.667 0 0 1-3.333 0"/></svg>  Memory </pre></li>
+        <li class="verbal"> <pre><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#00BB8F" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.5 10h5M10 18.333A8.333 8.333 0 1 0 1.667 10c0 1.518.406 2.942 1.115 4.167l-.699 3.75 3.75-.699A8.295 8.295 0 0 0 10 18.333Z"/></svg>  Verbal</pre></li>
+        <li class="visual"> <pre><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10 11.667a1.667 1.667 0 1 0 0-3.334 1.667 1.667 0 0 0 0 3.334Z"/><path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M17.5 10c-1.574 2.492-4.402 5-7.5 5s-5.926-2.508-7.5-5C4.416 7.632 6.66 5 10 5s5.584 2.632 7.5 5Z"/></svg>  Visual</pre></li>
+      </ul>
+      <ul class="numbers" type="none">
+        <li class="eight">80</li>
+        <li class="nine">92</li>
+        <li class="six">61</li>
+        <li class="seven">72</li>
+      </ul>
+      <ul class="of100" type="none">
+        <li class="o100">/100</li>
+        <li class="o100">/100</li>
+        <li class="o100">/100</li>
+        <li class="t100">/100</li>
+      </ul>
+      <button class="contiue">Continue</button>
+    </div>
+  </body>
+</html>
